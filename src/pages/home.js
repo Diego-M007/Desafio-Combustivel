@@ -36,6 +36,7 @@ export default function Homecomponent() {
         txtbutton={"Calcular"}
         funcao={() => visModal(true)}
         style={styles.buttoncalcular}
+        style2={styles.txtbutton}
       />
       <Tela2Component
         alcoolPreco={alcoolPreco}

@@ -21,14 +21,17 @@ export const styles = StyleSheet.create({
     height: 50,
     width: "70%",
     borderRadius: 10,
+    margin: 10,
   },
   buttonRecalcular: {
-    backgroundColor: "red",
     alignItems: "center",
     justifyContent: "center",
+    width: "70%",
     height: 50,
-    width: "90%",
     borderRadius: 10,
+    borderColor: "red",
+    borderWidth: 1,
+    margin: 10,
   },
   input: {
     color: "white",
@@ -38,5 +41,13 @@ export const styles = StyleSheet.create({
     color: "white",
     fontSize: 30,
     fontWeight: "bold",
+  },
+  txtbutton2: {
+    color: "red",
+    fontSize: 20,
+    fontWeight: "bold",
+  },
+  img: {
+    margin: 20,
   },
 });

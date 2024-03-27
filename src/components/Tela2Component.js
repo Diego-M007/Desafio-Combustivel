@@ -6,6 +6,7 @@ import ImagemComponent from "../components/imagemComponent";
 import TextoComponent from "../components/TextoComponent";
 import { useState } from "react";
 import ResultadoComponent from "./ResultadoComponent";
+import { styles } from "../styles/StyleSheet";
 
 export default function Tela2Component({ alcoolPreco, gasolinaPreco }) {
   const [visible, setVisible] = useState(false);
@@ -35,22 +36,22 @@ export default function Tela2Component({ alcoolPreco, gasolinaPreco }) {
           font: "20",
         }}
       >
-        <View style={{ justifyContent: "center", alignItems: "center" }}>
-          <ImagemComponent imagemSource={require("../assets/images/gas.png")} />
-          <ResultadoComponent
-            alcoolPreco={alcoolPreco}
-            gasolinaPreco={gasolinaPreco}
-          />
-          <TextoComponent txt={"Com os Preços: "} />
-          <PreçoComponent
-            alcoolPreco={alcoolPreco}
-            gasolinaPreco={gasolinaPreco}
-          />
-          <BotoesComponent
-            txtbutton={"Calcular novamente"}
-            funcao={() => visModal(false)}
-          />
-        </View>
+        <ImagemComponent imagemSource={require("../assets/images/gas.png")} />
+        <ResultadoComponent
+          alcoolPreco={alcoolPreco}
+          gasolinaPreco={gasolinaPreco}
+        />
+        <TextoComponent txt={"Com os Preços: "} />
+        <PreçoComponent
+          alcoolPreco={alcoolPreco}
+          gasolinaPreco={gasolinaPreco}
+        />
+        <BotoesComponent
+          txtbutton={"Calcular novamente"}
+          funcao={() => visModal(false)}
+          style={styles.buttonRecalcular}
+          style2={styles.txtbutton2}
+        />
       </View>
     </Modal>
   );
