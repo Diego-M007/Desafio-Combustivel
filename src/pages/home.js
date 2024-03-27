@@ -19,11 +19,6 @@ export default function Homecomponent() {
     }
   };
 
-  const handleCalculation = () => {
-    // Aqui você pode realizar cálculos ou validações com os preços
-    // Se necessário, você pode passar os preços como props para Tela2Component
-  };
-
   return (
     <View>
       <ImagemComponent imagemSource={require("../assets/images/logo.png")} />
