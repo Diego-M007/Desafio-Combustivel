@@ -2,7 +2,7 @@ import { Text, View } from "react-native";
 
 export default function ResultadoComponent({ alcoolPreco, gasolinaPreco }) {
   const results = alcoolPreco / gasolinaPreco;
-  console.log(results);
+  console.log("Resultado da conta:", results);
   return (
     <View>
       {results < 0.7 ? (
