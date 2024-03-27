@@ -27,15 +27,7 @@ export default function Tela2Component({ alcoolPreco, gasolinaPreco }) {
 
   return (
     <Modal transparent={true} animationType="fade" visible={visible}>
-      <View
-        style={{
-          flex: 1,
-          alignItems: "center",
-          justifyContent: "center",
-          backgroundColor: "black",
-          font: "20",
-        }}
-      >
+      <View style={styles.container3}>
         <ImagemComponent imagemSource={require("../assets/images/gas.png")} />
         <ResultadoComponent
           alcoolPreco={alcoolPreco}

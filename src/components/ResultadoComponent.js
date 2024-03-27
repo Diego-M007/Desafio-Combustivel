@@ -1,4 +1,5 @@
 import { Text, View } from "react-native";
+import { styles } from "../styles/StyleSheet";
 
 export default function ResultadoComponent({ alcoolPreco, gasolinaPreco }) {
   const results = alcoolPreco / gasolinaPreco;
@@ -6,27 +7,9 @@ export default function ResultadoComponent({ alcoolPreco, gasolinaPreco }) {
   return (
     <View>
       {results < 0.7 ? (
-        <Text
-          style={{
-            color: "green",
-            fontSize: 29,
-            margin: 20,
-            fontWeight: "bold",
-          }}
-        >
-          Compensa usar Álcool
-        </Text>
+        <Text style={styles.resultado}>Compensa usar Álcool</Text>
       ) : (
-        <Text
-          style={{
-            color: "green",
-            fontSize: 29,
-            margin: 20,
-            fontWeight: "bold",
-          }}
-        >
-          Compensa usar Gasolina
-        </Text>
+        <Text style={styles.texto2}>Compensa usar Gasolina</Text>
       )}
     </View>
   );

@@ -50,4 +50,46 @@ export const styles = StyleSheet.create({
   img: {
     margin: 20,
   },
+  Input: {
+    borderWidth: 5,
+    borderColor: "black",
+    borderWidth: 1,
+    borderRadius: 5,
+    height: 30,
+    backgroundColor: "white",
+    marginBottom: 10,
+  },
+  txtpreço: {
+    color: "white",
+    fontSize: 15,
+    marginTop: 10,
+  },
+  container4: {
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  texto: {
+    color: "white",
+    fontSize: 15,
+    marginTop: 10,
+  },
+  resultado: {
+    color: "green",
+    fontSize: 29,
+    margin: 20,
+    fontWeight: "bold",
+  },
+  texto2: {
+    color: "green",
+    fontSize: 29,
+    margin: 20,
+    fontWeight: "bold",
+  },
+  container3: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "black",
+    font: "20",
+  },
 });
