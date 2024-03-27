@@ -6,9 +6,27 @@ export default function ResultadoComponent({ alcoolPreco, gasolinaPreco }) {
   return (
     <View>
       {results < 0.7 ? (
-        <Text>Compensa usar Álcool</Text>
+        <Text
+          style={{
+            color: "green",
+            fontSize: 29,
+            margin: 20,
+            fontWeight: "bold",
+          }}
+        >
+          Compensa usar Álcool
+        </Text>
       ) : (
-        <Text>Compensa usar Gasolina</Text>
+        <Text
+          style={{
+            color: "green",
+            fontSize: 29,
+            margin: 20,
+            fontWeight: "bold",
+          }}
+        >
+          Compensa usar Gasolina
+        </Text>
       )}
     </View>
   );

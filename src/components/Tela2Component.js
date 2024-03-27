@@ -35,7 +35,7 @@ export default function Tela2Component({ alcoolPreco, gasolinaPreco }) {
           font: "20",
         }}
       >
-        <View>
+        <View style={{ justifyContent: "center", alignItems: "center" }}>
           <ImagemComponent imagemSource={require("../assets/images/gas.png")} />
           <ResultadoComponent
             alcoolPreco={alcoolPreco}
