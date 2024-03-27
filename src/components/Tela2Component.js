@@ -5,6 +5,7 @@ import BotoesComponent from "../components/BotoesComponent";
 import ImagemComponent from "../components/imagemComponent";
 import TextoComponent from "../components/TextoComponent";
 import { useState } from "react";
+import ResultadoComponent from "./ResultadoComponent";
 
 export default function Tela2Component({ alcoolPreco, gasolinaPreco }) {
   const [visible, setVisible] = useState(false);
@@ -16,6 +17,12 @@ export default function Tela2Component({ alcoolPreco, gasolinaPreco }) {
       setVisible(vis);
     }
   };
+
+  // let Alcool = alcoolPreco,
+  //   Gasolina = gasolinaPreco,
+  //   compensa;
+  // compensa = (Alcool / Gasolina <= 0, 7) ? "Alcool" : "Gasolina";
+  // console.log(compensa);
 
   return (
     <Modal transparent={true} animationType="fade" visible={visible}>
@@ -29,7 +36,11 @@ export default function Tela2Component({ alcoolPreco, gasolinaPreco }) {
       >
         <View>
           <ImagemComponent imagemSource={require("../assets/images/gas.png")} />
-          <TextoComponent txt={"Com os Preços:"} />
+          <ResultadoComponent
+            alcoolPreco={alcoolPreco}
+            gasolinaPreco={gasolinaPreco}
+          />
+          <TextoComponent txt={"Com os Preços: "} />
           <PreçoComponent
             alcoolPreco={alcoolPreco}
             gasolinaPreco={gasolinaPreco}
