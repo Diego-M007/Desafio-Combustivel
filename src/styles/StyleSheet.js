@@ -32,6 +32,7 @@ export const styles = StyleSheet.create({
   },
   input: {
     color: "white",
+    fontWeight: "bold",
   },
   txt: {
     color: "white",

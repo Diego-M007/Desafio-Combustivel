@@ -3,7 +3,7 @@ import { styles } from "../styles/StyleSheet";
 
 export default function BotoesComponent({ txtbutton, funcao, style }) {
   return (
-    <TouchableOpacity style={style} onPress={funcao}>
+    <TouchableOpacity style={style.button} onPress={funcao}>
       <Text style={styles.txtbutton}>{txtbutton}</Text>
     </TouchableOpacity>
   );
