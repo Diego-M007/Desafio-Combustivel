@@ -19,6 +19,7 @@ export default function InputComponents({ tituloinput, onChangeText }) {
           borderRadius: 5,
           height: 30,
           backgroundColor: "white",
+          marginBottom: 10,
         }}
         onChangeText={changeTxt}
       />
