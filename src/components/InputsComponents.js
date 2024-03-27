@@ -12,7 +12,14 @@ export default function InputComponents({ tituloinput, onChangeText }) {
       <TextInput
         secureTextEntry={false}
         inputMode="numeric"
-        style={{ borderWidth: 5, borderColor: "black" }}
+        style={{
+          borderWidth: 5,
+          borderColor: "black",
+          borderWidth: 1,
+          borderRadius: 5,
+          height: 30,
+          backgroundColor: "white",
+        }}
         onChangeText={changeTxt}
       />
     </View>

@@ -6,7 +6,6 @@ import ImagemComponent from "../components/imagemComponent";
 import TextoComponent from "../components/TextoComponent";
 import { useState } from "react";
 import ResultadoComponent from "./ResultadoComponent";
-import { styles } from "../styles/StyleSheet";
 
 export default function Tela2Component({ alcoolPreco, gasolinaPreco }) {
   const [visible, setVisible] = useState(false);
@@ -32,7 +31,8 @@ export default function Tela2Component({ alcoolPreco, gasolinaPreco }) {
           flex: 1,
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "gray",
+          backgroundColor: "black",
+          font: "20",
         }}
       >
         <View>
@@ -49,7 +49,6 @@ export default function Tela2Component({ alcoolPreco, gasolinaPreco }) {
           <BotoesComponent
             txtbutton={"Calcular novamente"}
             funcao={() => visModal(false)}
-            style={styles.buttonRecalcular}
           />
         </View>
       </View>
