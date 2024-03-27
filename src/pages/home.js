@@ -21,7 +21,7 @@ export default function Homecomponent() {
   };
 
   return (
-    <View styles={styles.container2}>
+    <View style={styles.container}>
       <ImagemComponent imagemSource={require("../assets/images/logo.png")} />
       <TextoComponent txt={"Qual Melhor Opção?"} />
       <InputComponents
