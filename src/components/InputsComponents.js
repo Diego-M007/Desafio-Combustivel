@@ -7,7 +7,7 @@ export default function InputComponents({ tituloinput, onChangeText }) {
   };
 
   return (
-    <View>
+    <View style={{ width: "70%" }}>
       <Text style={styles.input}>{tituloinput}</Text>
       <TextInput
         secureTextEntry={false}

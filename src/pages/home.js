@@ -32,7 +32,11 @@ export default function Homecomponent() {
         tituloinput={"Gasolina (preço por litro)"}
         onChangeText={setGasolinaPreco}
       />
-      <BotoesComponent txtbutton={"calcular"} funcao={() => visModal(true)} />
+      <BotoesComponent
+        txtbutton={"Calcular"}
+        funcao={() => visModal(true)}
+        style={styles.buttoncalcular}
+      />
       <Tela2Component
         alcoolPreco={alcoolPreco}
         gasolinaPreco={gasolinaPreco}

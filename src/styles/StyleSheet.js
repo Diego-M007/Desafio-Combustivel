@@ -7,28 +7,33 @@ export const styles = StyleSheet.create({
     flex: 1,
     width: "100%",
     height: "100%",
-    backgroundColor: "black",
-  },
-
-  container2: {
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "black",
+    backgroundColor: "gray",
   },
   txt: {
     height: 40,
     borderRadius: 5,
     marginBottom: 10,
+    color: "white",
   },
   txtbutton: {
-    borderColor: "#ff0000",
+    color: "white",
+    fontSize: 20,
+    fontWeight: "bold",
   },
   buttoncalcular: {
     backgroundColor: "red",
-    borderWidth: 1,
     alignItems: "center",
     justifyContent: "center",
-    height: 40,
+    height: 50,
+    width: "70%",
+    borderRadius: 10,
+  },
+  buttonRecalcular: {
+    backgroundColor: "red",
+    alignItems: "center",
+    justifyContent: "center",
+    height: 50,
     width: "90%",
+    borderRadius: 10,
   },
 });
