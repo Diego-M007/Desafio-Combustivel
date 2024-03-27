@@ -31,7 +31,8 @@ export default function Tela2Component({ alcoolPreco, gasolinaPreco }) {
           flex: 1,
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "gray",
+          backgroundColor: "black",
+          font: "20",
         }}
       >
         <View>

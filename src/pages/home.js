@@ -5,6 +5,7 @@ import InputComponents from "../components/InputsComponents";
 import TextoComponent from "../components/TextoComponent";
 import Tela2Component from "../components/Tela2Component";
 import { View } from "react-native";
+import { styles } from "../styles/StyleSheet";
 
 export default function Homecomponent() {
   const [alcoolPreco, setAlcoolPreco] = useState("");
@@ -20,7 +21,7 @@ export default function Homecomponent() {
   };
 
   return (
-    <View>
+    <View styles={styles.container2}>
       <ImagemComponent imagemSource={require("../assets/images/logo.png")} />
       <TextoComponent txt={"Qual Melhor Opção?"} />
       <InputComponents

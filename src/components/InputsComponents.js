@@ -1,4 +1,5 @@
 import { View, TextInput, Text } from "react-native";
+import { styles } from "../styles/StyleSheet";
 
 export default function InputComponents({ tituloinput, onChangeText }) {
   const changeTxt = (textInput) => {
@@ -7,7 +8,7 @@ export default function InputComponents({ tituloinput, onChangeText }) {
 
   return (
     <View>
-      <Text>{tituloinput}</Text>
+      <Text style={styles.input}>{tituloinput}</Text>
       <TextInput
         secureTextEntry={false}
         inputMode="numeric"
