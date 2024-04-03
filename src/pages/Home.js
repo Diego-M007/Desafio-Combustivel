@@ -3,7 +3,7 @@ import BotoesComponent from "../components/BotoesComponent";
 import ImagemComponent from "../components/imagemComponent";
 import InputComponents from "../components/InputsComponents";
 import TextoComponent from "../components/TextoComponent";
-import Tela2Component from "../components/Tela2Component";
+import ModalComponent from "../components/ModalComponent";
 import { View } from "react-native";
 import { styles } from "../styles/StyleSheet";
 
@@ -38,7 +38,7 @@ export default function Homecomponent() {
         style={styles.buttoncalcular}
         style2={styles.txtbutton}
       />
-      <Tela2Component
+      <ModalComponent
         alcoolPreco={alcoolPreco}
         gasolinaPreco={gasolinaPreco}
         visible={visible}

@@ -90,6 +90,6 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "black",
-    font: "20",
+    fontSize: 20,
   },
 });

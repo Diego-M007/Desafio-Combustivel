@@ -1,14 +1,16 @@
 import React from "react";
 import { View, Modal } from "react-native";
-import PreçoComponent from "./PreçoComponent";
-import BotoesComponent from "../components/BotoesComponent";
-import ImagemComponent from "../components/imagemComponent";
-import TextoComponent from "../components/TextoComponent";
+import PrecoComponent from "./PreçoComponent";
+import BotoesComponent from "./BotoesComponent";
+import ImagemComponent from "./imagemComponent";
+import TextoComponent from "./TextoComponent";
 import { useState } from "react";
 import ResultadoComponent from "./ResultadoComponent";
 import { styles } from "../styles/StyleSheet";
 
-export default function Tela2Component({ alcoolPreco, gasolinaPreco }) {
+// Vocês estão com duas funções visModal, é possivel fazer com uma só.
+
+export default function ModalComponent({ alcoolPreco, gasolinaPreco }) {
   const [visible, setVisible] = useState(false);
 
   visModal = (vis) => {
@@ -19,12 +21,6 @@ export default function Tela2Component({ alcoolPreco, gasolinaPreco }) {
     }
   };
 
-  // let Alcool = alcoolPreco,
-  //   Gasolina = gasolinaPreco,
-  //   compensa;
-  // compensa = (Alcool / Gasolina <= 0, 7) ? "Alcool" : "Gasolina";
-  // console.log(compensa);
-
   return (
     <Modal transparent={true} animationType="fade" visible={visible}>
       <View style={styles.container3}>
@@ -34,7 +30,7 @@ export default function Tela2Component({ alcoolPreco, gasolinaPreco }) {
           gasolinaPreco={gasolinaPreco}
         />
         <TextoComponent txt={"Com os Preços: "} />
-        <PreçoComponent
+        <PrecoComponent
           alcoolPreco={alcoolPreco}
           gasolinaPreco={gasolinaPreco}
         />

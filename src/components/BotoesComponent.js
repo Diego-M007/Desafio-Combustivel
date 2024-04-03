@@ -1,5 +1,4 @@
 import { TouchableOpacity, Text } from "react-native";
-import { styles } from "../styles/StyleSheet";
 
 export default function BotoesComponent({ txtbutton, funcao, style, style2 }) {
   return (

@@ -1,10 +1,5 @@
-import Homecomponent from "./src/pages/home";
-import { View } from "react-native";
+import Homecomponent from "./src/pages/Home";
 
 export default function App() {
-  return (
-    <View style={{ flex: 1 }}>
-      <Homecomponent />
-    </View>
-  );
+  return <Homecomponent />;
 }
